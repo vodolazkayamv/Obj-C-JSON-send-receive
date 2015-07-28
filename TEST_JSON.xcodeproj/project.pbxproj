@@ -21,7 +21,6 @@
 		ECA295EE1B64FD3400FFA9B3 /* GMServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */; };
 		ECA295F11B65030200FFA9B3 /* UPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F01B65030200FFA9B3 /* UPUtility.m */; };
 		ECA295F41B67AF6D00FFA9B3 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F31B67AF6D00FFA9B3 /* DAO.m */; };
-		ECA295F71B67C51000FFA9B3 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F61B67C51000FFA9B3 /* SearchBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +60,6 @@
 		ECA295F01B65030200FFA9B3 /* UPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPUtility.m; sourceTree = "<group>"; };
 		ECA295F21B67AF6D00FFA9B3 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
 		ECA295F31B67AF6D00FFA9B3 /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; };
-		ECA295F51B67C51000FFA9B3 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
-		ECA295F61B67C51000FFA9B3 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +114,6 @@
 				ECA295C71B64F65C00FFA9B3 /* DetailViewController.h */,
 				ECA295C81B64F65C00FFA9B3 /* DetailViewController.m */,
 				ECA295CA1B64F65C00FFA9B3 /* Main.storyboard */,
-				ECA295F51B67C51000FFA9B3 /* SearchBar.h */,
-				ECA295F61B67C51000FFA9B3 /* SearchBar.m */,
 				ECA295E61B64F91C00FFA9B3 /* TESTJSONTableViewController.h */,
 				ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */,
 				ECA295CD1B64F65C00FFA9B3 /* Images.xcassets */,
@@ -262,7 +257,6 @@
 				ECA295C61B64F65C00FFA9B3 /* MasterViewController.m in Sources */,
 				ECA295F11B65030200FFA9B3 /* UPUtility.m in Sources */,
 				ECA295EE1B64FD3400FFA9B3 /* GMServerManager.m in Sources */,
-				ECA295F71B67C51000FFA9B3 /* SearchBar.m in Sources */,
 				ECA295C01B64F65C00FFA9B3 /* AppDelegate.m in Sources */,
 				ECA295C31B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld in Sources */,
 				ECA295EB1B64FA2E00FFA9B3 /* Student.m in Sources */,
@@ -462,6 +456,7 @@
 				ECA295E21B64F65C00FFA9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA295E31B64F65C00FFA9B3 /* Build configuration list for PBXNativeTarget "TEST_JSONTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +465,7 @@
 				ECA295E51B64F65C00FFA9B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
