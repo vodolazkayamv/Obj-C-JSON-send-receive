@@ -9,6 +9,13 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "MasterViewController.h"
+#import "TESTJSONTableViewController.h"
+#import "DAO.h"
+
+
+NSString * const WCFNetworkError			=	@"WCFNetworkError";					// сетевая ошибка
+NSString * const NOTIFY_LoadedStudentsData  =   @"NOTIFY_LoadedStudentsData";       // загружены данные списка студентов с сервера
+extern NSString * const NOTIFY_DataUpdated  =   @"NOTIFY_DataUpdated";              // DAO обновил данные таблиц
 
 @interface AppDelegate ()
 
@@ -18,10 +25,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+
+    self.server = [[GMServerManager alloc] init];
+    DAO *dao = [DAO sharedInstance];
+    
     return YES;
 }
 

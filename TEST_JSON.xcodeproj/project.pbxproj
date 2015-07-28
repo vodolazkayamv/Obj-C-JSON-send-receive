@@ -16,6 +16,12 @@
 		ECA295CE1B64F65C00FFA9B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA295CD1B64F65C00FFA9B3 /* Images.xcassets */; };
 		ECA295D11B64F65C00FFA9B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA295CF1B64F65C00FFA9B3 /* LaunchScreen.xib */; };
 		ECA295DD1B64F65C00FFA9B3 /* TEST_JSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295DC1B64F65C00FFA9B3 /* TEST_JSONTests.m */; };
+		ECA295E81B64F91C00FFA9B3 /* TESTJSONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */; };
+		ECA295EB1B64FA2E00FFA9B3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295EA1B64FA2E00FFA9B3 /* Student.m */; };
+		ECA295EE1B64FD3400FFA9B3 /* GMServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */; };
+		ECA295F11B65030200FFA9B3 /* UPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F01B65030200FFA9B3 /* UPUtility.m */; };
+		ECA295F41B67AF6D00FFA9B3 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F31B67AF6D00FFA9B3 /* DAO.m */; };
+		ECA295F71B67C51000FFA9B3 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F61B67C51000FFA9B3 /* SearchBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,18 @@
 		ECA295D61B64F65C00FFA9B3 /* TEST_JSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_JSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA295DB1B64F65C00FFA9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECA295DC1B64F65C00FFA9B3 /* TEST_JSONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEST_JSONTests.m; sourceTree = "<group>"; };
+		ECA295E61B64F91C00FFA9B3 /* TESTJSONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESTJSONTableViewController.h; sourceTree = "<group>"; };
+		ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESTJSONTableViewController.m; sourceTree = "<group>"; };
+		ECA295E91B64FA2E00FFA9B3 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		ECA295EA1B64FA2E00FFA9B3 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		ECA295EC1B64FD3400FFA9B3 /* GMServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMServerManager.h; sourceTree = "<group>"; };
+		ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMServerManager.m; sourceTree = "<group>"; };
+		ECA295EF1B65030200FFA9B3 /* UPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPUtility.h; sourceTree = "<group>"; };
+		ECA295F01B65030200FFA9B3 /* UPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPUtility.m; sourceTree = "<group>"; };
+		ECA295F21B67AF6D00FFA9B3 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
+		ECA295F31B67AF6D00FFA9B3 /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; };
+		ECA295F51B67C51000FFA9B3 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
+		ECA295F61B67C51000FFA9B3 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +104,12 @@
 		ECA295B91B64F65C00FFA9B3 /* TEST_JSON */ = {
 			isa = PBXGroup;
 			children = (
+				ECA295F21B67AF6D00FFA9B3 /* DAO.h */,
+				ECA295F31B67AF6D00FFA9B3 /* DAO.m */,
+				ECA295EF1B65030200FFA9B3 /* UPUtility.h */,
+				ECA295F01B65030200FFA9B3 /* UPUtility.m */,
+				ECA295EC1B64FD3400FFA9B3 /* GMServerManager.h */,
+				ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */,
 				ECA295BE1B64F65C00FFA9B3 /* AppDelegate.h */,
 				ECA295BF1B64F65C00FFA9B3 /* AppDelegate.m */,
 				ECA295C41B64F65C00FFA9B3 /* MasterViewController.h */,
@@ -93,9 +117,15 @@
 				ECA295C71B64F65C00FFA9B3 /* DetailViewController.h */,
 				ECA295C81B64F65C00FFA9B3 /* DetailViewController.m */,
 				ECA295CA1B64F65C00FFA9B3 /* Main.storyboard */,
+				ECA295F51B67C51000FFA9B3 /* SearchBar.h */,
+				ECA295F61B67C51000FFA9B3 /* SearchBar.m */,
+				ECA295E61B64F91C00FFA9B3 /* TESTJSONTableViewController.h */,
+				ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */,
 				ECA295CD1B64F65C00FFA9B3 /* Images.xcassets */,
 				ECA295CF1B64F65C00FFA9B3 /* LaunchScreen.xib */,
 				ECA295C11B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld */,
+				ECA295E91B64FA2E00FFA9B3 /* Student.h */,
+				ECA295EA1B64FA2E00FFA9B3 /* Student.m */,
 				ECA295BA1B64F65C00FFA9B3 /* Supporting Files */,
 			);
 			path = TEST_JSON;
@@ -227,11 +257,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA295F41B67AF6D00FFA9B3 /* DAO.m in Sources */,
 				ECA295C91B64F65C00FFA9B3 /* DetailViewController.m in Sources */,
 				ECA295C61B64F65C00FFA9B3 /* MasterViewController.m in Sources */,
+				ECA295F11B65030200FFA9B3 /* UPUtility.m in Sources */,
+				ECA295EE1B64FD3400FFA9B3 /* GMServerManager.m in Sources */,
+				ECA295F71B67C51000FFA9B3 /* SearchBar.m in Sources */,
 				ECA295C01B64F65C00FFA9B3 /* AppDelegate.m in Sources */,
 				ECA295C31B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld in Sources */,
+				ECA295EB1B64FA2E00FFA9B3 /* Student.m in Sources */,
 				ECA295BD1B64F65C00FFA9B3 /* main.m in Sources */,
+				ECA295E81B64F91C00FFA9B3 /* TESTJSONTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
