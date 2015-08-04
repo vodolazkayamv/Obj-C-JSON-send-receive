@@ -24,7 +24,7 @@
 
 
 
-
+- (void) getGroups:(NSString *) aName;
 - (void) getGroupList:(NSString *) aName;
 
 

@@ -13,6 +13,8 @@
 
 @implementation DAO
 
+@synthesize currentGroup;
+
 + (id)sharedInstance {
 	static DAO *sharedDAO = nil;
 	static dispatch_once_t onceToken;
@@ -30,6 +32,7 @@
 		moc = d.managedObjectContext;
 		NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 		[nc addObserver:self selector:@selector(updateGroupList:) name:NOTIFY_LoadedStudentsData object:nil];
+        [nc addObserver:self selector:@selector(updateGroups:) name:NOTIFY_LoadedGroupsData object:nil];
 	}
 	return self;
 }
@@ -87,19 +90,26 @@
 	
 }
 
-- (NSFetchedResultsController *) wishesWithPredicate:(NSString *) aPredicate
+- (NSFetchedResultsController *) groupsWithPredicate:(NSString *) aPredicate
 {
-	NSString *substring = (aPredicate ? [NSString stringWithFormat:@"note contains[c] %@",aPredicate] : nil);
-	return [self fetchedResultsControllerByKey:@"dateCreated" substring:substring entityName:@"Wish" andPredicate:nil];
+	NSString *substring = (aPredicate ? [NSString stringWithFormat:@"title contains[c] %@",aPredicate] : nil);
+	return [self fetchedResultsControllerByKey:@"identificator" substring:substring entityName:@"Group" andPredicate:nil];
 
 }
-
+/*
 - (NSFetchedResultsController *) studentsWithPredicate:(NSString *) aPredicate
 {
     NSString *substring = (aPredicate ? [NSString stringWithFormat:@"surname contains[c] %@",aPredicate] : nil);
     return [self fetchedResultsControllerByKey:@"surname" substring:substring entityName:@"Student" andPredicate:nil];
 }
+*/
 
+- (NSFetchedResultsController *) studentsWithPredicate:(NSPredicate
+                                                        *) aPredicate
+{
+//    NSString *substring = (aPredicate ? [NSString stringWithFormat:@"surname contains[c] %@",aPredicate] : nil);
+    return [self fetchedResultsControllerByKey:@"surname" substring:nil entityName:@"Student" andPredicate:aPredicate];
+}
 
 #pragma mark - Селекторы
 
@@ -112,7 +122,14 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFY_DataUpdated object:nil];
 }
 
-
+- (void) updateGroups:(NSNotification *) note
+{
+    NSArray *result = [note object];
+    for (NSDictionary *record in result) {
+        Group *g = [Group createOrUpdateRecordWithDict:record inMoc:moc];
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFY_DataUpdated object:nil];
+}
 
 
 @end

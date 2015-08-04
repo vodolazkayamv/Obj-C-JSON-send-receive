@@ -10,17 +10,22 @@
 		ECA295BD1B64F65C00FFA9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295BC1B64F65C00FFA9B3 /* main.m */; };
 		ECA295C01B64F65C00FFA9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295BF1B64F65C00FFA9B3 /* AppDelegate.m */; };
 		ECA295C31B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA295C11B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld */; };
-		ECA295C61B64F65C00FFA9B3 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295C51B64F65C00FFA9B3 /* MasterViewController.m */; };
-		ECA295C91B64F65C00FFA9B3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295C81B64F65C00FFA9B3 /* DetailViewController.m */; };
 		ECA295CC1B64F65C00FFA9B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA295CA1B64F65C00FFA9B3 /* Main.storyboard */; };
 		ECA295CE1B64F65C00FFA9B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA295CD1B64F65C00FFA9B3 /* Images.xcassets */; };
 		ECA295D11B64F65C00FFA9B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA295CF1B64F65C00FFA9B3 /* LaunchScreen.xib */; };
 		ECA295DD1B64F65C00FFA9B3 /* TEST_JSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295DC1B64F65C00FFA9B3 /* TEST_JSONTests.m */; };
 		ECA295E81B64F91C00FFA9B3 /* TESTJSONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */; };
-		ECA295EB1B64FA2E00FFA9B3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295EA1B64FA2E00FFA9B3 /* Student.m */; };
 		ECA295EE1B64FD3400FFA9B3 /* GMServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */; };
 		ECA295F11B65030200FFA9B3 /* UPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F01B65030200FFA9B3 /* UPUtility.m */; };
 		ECA295F41B67AF6D00FFA9B3 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295F31B67AF6D00FFA9B3 /* DAO.m */; };
+		ECA295FD1B6A26CE00FFA9B3 /* APLResultsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295FC1B6A26CE00FFA9B3 /* APLResultsTableController.m */; };
+		ECA296001B6A310800FFA9B3 /* APLBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA295FF1B6A310800FFA9B3 /* APLBaseTableViewController.m */; };
+		ECA296021B6A335400FFA9B3 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA296011B6A335400FFA9B3 /* TableCell.xib */; };
+		ECA296041B6CC00400FFA9B3 /* check-1-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA296031B6CC00400FFA9B3 /* check-1-icon.png */; };
+		ECA296071B6CD05600FFA9B3 /* GroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA296061B6CD05600FFA9B3 /* GroupsTableViewController.m */; };
+		ECA296091B6CD2E800FFA9B3 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA296081B6CD2E800FFA9B3 /* GroupCell.xib */; };
+		ECA296131B6CFEF900FFA9B3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA296121B6CFEF900FFA9B3 /* Student.m */; };
+		ECA296161B6CFF3E00FFA9B3 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA296151B6CFF3E00FFA9B3 /* Group.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +45,6 @@
 		ECA295BE1B64F65C00FFA9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECA295BF1B64F65C00FFA9B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECA295C21B64F65C00FFA9B3 /* TEST_JSON.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_JSON.xcdatamodel; sourceTree = "<group>"; };
-		ECA295C41B64F65C00FFA9B3 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		ECA295C51B64F65C00FFA9B3 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		ECA295C71B64F65C00FFA9B3 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		ECA295C81B64F65C00FFA9B3 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		ECA295CB1B64F65C00FFA9B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECA295CD1B64F65C00FFA9B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECA295D01B64F65C00FFA9B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -52,14 +53,25 @@
 		ECA295DC1B64F65C00FFA9B3 /* TEST_JSONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEST_JSONTests.m; sourceTree = "<group>"; };
 		ECA295E61B64F91C00FFA9B3 /* TESTJSONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESTJSONTableViewController.h; sourceTree = "<group>"; };
 		ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESTJSONTableViewController.m; sourceTree = "<group>"; };
-		ECA295E91B64FA2E00FFA9B3 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		ECA295EA1B64FA2E00FFA9B3 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		ECA295EC1B64FD3400FFA9B3 /* GMServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMServerManager.h; sourceTree = "<group>"; };
 		ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMServerManager.m; sourceTree = "<group>"; };
 		ECA295EF1B65030200FFA9B3 /* UPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPUtility.h; sourceTree = "<group>"; };
 		ECA295F01B65030200FFA9B3 /* UPUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPUtility.m; sourceTree = "<group>"; };
 		ECA295F21B67AF6D00FFA9B3 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
 		ECA295F31B67AF6D00FFA9B3 /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; };
+		ECA295FB1B6A26CE00FFA9B3 /* APLResultsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLResultsTableController.h; sourceTree = "<group>"; };
+		ECA295FC1B6A26CE00FFA9B3 /* APLResultsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLResultsTableController.m; sourceTree = "<group>"; };
+		ECA295FE1B6A310800FFA9B3 /* APLBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLBaseTableViewController.h; sourceTree = "<group>"; };
+		ECA295FF1B6A310800FFA9B3 /* APLBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLBaseTableViewController.m; sourceTree = "<group>"; };
+		ECA296011B6A335400FFA9B3 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		ECA296031B6CC00400FFA9B3 /* check-1-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-1-icon.png"; sourceTree = "<group>"; };
+		ECA296051B6CD05600FFA9B3 /* GroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsTableViewController.h; sourceTree = "<group>"; };
+		ECA296061B6CD05600FFA9B3 /* GroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsTableViewController.m; sourceTree = "<group>"; };
+		ECA296081B6CD2E800FFA9B3 /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		ECA296111B6CFEF900FFA9B3 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		ECA296121B6CFEF900FFA9B3 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		ECA296141B6CFF3E00FFA9B3 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		ECA296151B6CFF3E00FFA9B3 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,26 +113,12 @@
 		ECA295B91B64F65C00FFA9B3 /* TEST_JSON */ = {
 			isa = PBXGroup;
 			children = (
-				ECA295F21B67AF6D00FFA9B3 /* DAO.h */,
-				ECA295F31B67AF6D00FFA9B3 /* DAO.m */,
-				ECA295EF1B65030200FFA9B3 /* UPUtility.h */,
-				ECA295F01B65030200FFA9B3 /* UPUtility.m */,
-				ECA295EC1B64FD3400FFA9B3 /* GMServerManager.h */,
-				ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */,
-				ECA295BE1B64F65C00FFA9B3 /* AppDelegate.h */,
-				ECA295BF1B64F65C00FFA9B3 /* AppDelegate.m */,
-				ECA295C41B64F65C00FFA9B3 /* MasterViewController.h */,
-				ECA295C51B64F65C00FFA9B3 /* MasterViewController.m */,
-				ECA295C71B64F65C00FFA9B3 /* DetailViewController.h */,
-				ECA295C81B64F65C00FFA9B3 /* DetailViewController.m */,
-				ECA295CA1B64F65C00FFA9B3 /* Main.storyboard */,
-				ECA295E61B64F91C00FFA9B3 /* TESTJSONTableViewController.h */,
-				ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */,
+				ECA296031B6CC00400FFA9B3 /* check-1-icon.png */,
+				ECA2960F1B6CD78E00FFA9B3 /* Utilities */,
+				ECA296101B6CDA1E00FFA9B3 /* Table Views */,
+				ECA2960D1B6CD74200FFA9B3 /* Core Data */,
+				ECA2960E1B6CD75700FFA9B3 /* XIBs */,
 				ECA295CD1B64F65C00FFA9B3 /* Images.xcassets */,
-				ECA295CF1B64F65C00FFA9B3 /* LaunchScreen.xib */,
-				ECA295C11B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld */,
-				ECA295E91B64FA2E00FFA9B3 /* Student.h */,
-				ECA295EA1B64FA2E00FFA9B3 /* Student.m */,
 				ECA295BA1B64F65C00FFA9B3 /* Supporting Files */,
 			);
 			path = TEST_JSON;
@@ -150,6 +148,59 @@
 				ECA295DB1B64F65C00FFA9B3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECA2960D1B6CD74200FFA9B3 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				ECA296141B6CFF3E00FFA9B3 /* Group.h */,
+				ECA296151B6CFF3E00FFA9B3 /* Group.m */,
+				ECA295C11B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld */,
+				ECA296111B6CFEF900FFA9B3 /* Student.h */,
+				ECA296121B6CFEF900FFA9B3 /* Student.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		ECA2960E1B6CD75700FFA9B3 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				ECA295CA1B64F65C00FFA9B3 /* Main.storyboard */,
+				ECA296081B6CD2E800FFA9B3 /* GroupCell.xib */,
+				ECA296011B6A335400FFA9B3 /* TableCell.xib */,
+				ECA295CF1B64F65C00FFA9B3 /* LaunchScreen.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		ECA2960F1B6CD78E00FFA9B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ECA295BE1B64F65C00FFA9B3 /* AppDelegate.h */,
+				ECA295BF1B64F65C00FFA9B3 /* AppDelegate.m */,
+				ECA295F21B67AF6D00FFA9B3 /* DAO.h */,
+				ECA295F31B67AF6D00FFA9B3 /* DAO.m */,
+				ECA295EF1B65030200FFA9B3 /* UPUtility.h */,
+				ECA295F01B65030200FFA9B3 /* UPUtility.m */,
+				ECA295EC1B64FD3400FFA9B3 /* GMServerManager.h */,
+				ECA295ED1B64FD3400FFA9B3 /* GMServerManager.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		ECA296101B6CDA1E00FFA9B3 /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECA295FE1B6A310800FFA9B3 /* APLBaseTableViewController.h */,
+				ECA295FF1B6A310800FFA9B3 /* APLBaseTableViewController.m */,
+				ECA295FB1B6A26CE00FFA9B3 /* APLResultsTableController.h */,
+				ECA295FC1B6A26CE00FFA9B3 /* APLResultsTableController.m */,
+				ECA296051B6CD05600FFA9B3 /* GroupsTableViewController.h */,
+				ECA296061B6CD05600FFA9B3 /* GroupsTableViewController.m */,
+				ECA295E61B64F91C00FFA9B3 /* TESTJSONTableViewController.h */,
+				ECA295E71B64F91C00FFA9B3 /* TESTJSONTableViewController.m */,
+			);
+			name = "Table Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA295CC1B64F65C00FFA9B3 /* Main.storyboard in Resources */,
+				ECA296091B6CD2E800FFA9B3 /* GroupCell.xib in Resources */,
 				ECA295D11B64F65C00FFA9B3 /* LaunchScreen.xib in Resources */,
+				ECA296041B6CC00400FFA9B3 /* check-1-icon.png in Resources */,
+				ECA296021B6A335400FFA9B3 /* TableCell.xib in Resources */,
 				ECA295CE1B64F65C00FFA9B3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,15 +307,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA295F41B67AF6D00FFA9B3 /* DAO.m in Sources */,
-				ECA295C91B64F65C00FFA9B3 /* DetailViewController.m in Sources */,
-				ECA295C61B64F65C00FFA9B3 /* MasterViewController.m in Sources */,
 				ECA295F11B65030200FFA9B3 /* UPUtility.m in Sources */,
 				ECA295EE1B64FD3400FFA9B3 /* GMServerManager.m in Sources */,
+				ECA296161B6CFF3E00FFA9B3 /* Group.m in Sources */,
 				ECA295C01B64F65C00FFA9B3 /* AppDelegate.m in Sources */,
 				ECA295C31B64F65C00FFA9B3 /* TEST_JSON.xcdatamodeld in Sources */,
-				ECA295EB1B64FA2E00FFA9B3 /* Student.m in Sources */,
+				ECA295FD1B6A26CE00FFA9B3 /* APLResultsTableController.m in Sources */,
+				ECA296071B6CD05600FFA9B3 /* GroupsTableViewController.m in Sources */,
 				ECA295BD1B64F65C00FFA9B3 /* main.m in Sources */,
+				ECA296001B6A310800FFA9B3 /* APLBaseTableViewController.m in Sources */,
 				ECA295E81B64F91C00FFA9B3 /* TESTJSONTableViewController.m in Sources */,
+				ECA296131B6CFEF900FFA9B3 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

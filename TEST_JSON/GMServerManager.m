@@ -12,13 +12,15 @@
 #import "Student.h"
 #import "TESTJSONTableViewController.h"
 
-#define IWISH_HOST		@"imac-maria.local"					// Host для заголовков запроса
-#define REQUEST_URL		@"http://imac-maria.local/"			// точка доступа к серверу
+//#define IWISH_HOST		@"imac-maria.local"					// Host для заголовков запроса
+//#define REQUEST_URL		@"http://imac-maria.local/"			// точка доступа к серверу
 
-
+#define IWISH_HOST		@"macsoft.cardarmy.ru"					// Host для заголовков запроса
+#define REQUEST_URL		@"http://macsoft.cardarmy.ru/"			// точка доступа к серверу
 
 typedef enum {
 	GMGetGroupList = 0,
+    GMGetGroups = 1,
 	
 } GMComanndCodes;
 
@@ -57,7 +59,7 @@ typedef enum {
 }
 
 
-#pragma mark -
+#pragma mark - requests
 
 - (void) spawnRequestToURL:(NSString *)aUrl withRequestCode:(GMComanndCodes) aCode andData:(NSData *)aData
 {
@@ -69,7 +71,7 @@ typedef enum {
 	[self spawnRequestToURL:aUrl withRequestCode:aCode andData:aData asPut:YES];
 }
 
-- (void) spawnRequestToURL:(NSString *)aUrl withRequestCode:(GMComanndCodes) aCode andData:(NSData *)aData asPut:(BOOL) aPut
+- (void) spawnRequestToURL:(NSString *)aUrl withRequestCode:(GMComanndCodes)aCode andData:(NSData *)aData asPut:(BOOL) aPut
 {
 	NSMutableData* data = [[NSMutableData alloc] initWithLength:0];
 	
@@ -128,6 +130,7 @@ typedef enum {
 - (void) getGroupList:(NSString *) aName
 {
 
+    
 	NSDictionary *paramDict = @{
                                 @"groupName" : aName
 								};
@@ -136,11 +139,17 @@ typedef enum {
 	NSData* jsonData = [NSJSONSerialization dataWithJSONObject:paramDict
 													   options:NSJSONWritingPrettyPrinted error:&error];
 	if (error) {
-		DLog(@"Cannot create JSON packet - %@", [error localizedDescription]);
+		DLog(@"Cannot create JSON package - %@", [error localizedDescription]);
 		return;
 	}
 	[self spawnRequestToURL:@"/cgi-bin/get_group_list.pl" withRequestCode:GMGetGroupList andData:jsonData];
 	
+}
+
+- (void) getGroups:(NSString *) aName
+{
+    [self spawnRequestToURL:@"/cgi-bin/get_groups.pl" withRequestCode:GMGetGroups andData:nil];
+    
 }
 
 #pragma mark - iWish
@@ -209,6 +218,7 @@ typedef enum {
 	//	NSLog(@"коды %@",requestCodes);
 	switch ([[requestCodes objectAtIndex:index] intValue]) {
 		case GMGetGroupList:				[self processGetGroupList:index]; break;
+        case GMGetGroups:                   [self processGetGroups:index]; break;
 		
 	}
 	
@@ -239,12 +249,40 @@ typedef enum {
 		return;
 	}
     ALog(@"retData recieved OK \n");
-	//ALog(@"retData = %@",retData);
+	ALog(@"retData = %@",retData);
 	
-    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFY_LoadedStudentsData object:retData];
-    
-
+    [nc postNotificationName:NOTIFY_LoadedStudentsData object:retData];
 }
+
+
+
+- (void) processGetGroups:(NSInteger) index
+{
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+    NSMutableData* receivedData = [receivedDatas objectAtIndex:index];
+    
+    NSString* text = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    ALog(@"text JSON received on request OK \n");
+    ALog(@"processRegister request:\n %@ \n", text);
+    
+    NSError *error = nil;
+    
+    NSArray *retData = nil;
+    retData= [NSJSONSerialization JSONObjectWithData:receivedData options:0 error:&error];
+    if (!retData && error) {
+        DLog(@"Error during Register Request - %@",[error localizedDescription]);
+        
+        return;
+    }
+    ALog(@"retData recieved OK \n");
+    ALog(@"retData = %@",retData);
+    
+    [nc postNotificationName:NOTIFY_LoadedGroupsData object:retData];
+    
+    
+}
+
 
 
 @end

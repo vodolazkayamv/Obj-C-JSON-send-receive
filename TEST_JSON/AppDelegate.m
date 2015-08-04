@@ -7,15 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "GroupsTableViewController.h"
 #import "TESTJSONTableViewController.h"
 #import "DAO.h"
 
 
-NSString * const WCFNetworkError			=	@"WCFNetworkError";					// сетевая ошибка
-NSString * const NOTIFY_LoadedStudentsData  =   @"NOTIFY_LoadedStudentsData";       // загружены данные списка студентов с сервера
-extern NSString * const NOTIFY_DataUpdated  =   @"NOTIFY_DataUpdated";              // DAO обновил данные таблиц
+NSString * const WCFNetworkError			 =	 @"WCFNetworkError";		   	  // сетевая ошибка
+NSString * const NOTIFY_LoadedStudentsData   =   @"NOTIFY_LoadedStudentsData";    // загружены данные списка студентов с сервера
+NSString * const NOTIFY_DataUpdated          =   @"NOTIFY_DataUpdated";           // DAO обновил данные таблиц
+NSString * const NOTIFY_LoadedGroupsData     =   @"NOTIFY_LoadedGroupsData";      // загружены данные списка групп
+NSString * const NOTIFY_GroupHasBeenSelected =   @"NOTIFY_GroupHasBeenSelected";  // была выбрана группа
 
 @interface AppDelegate ()
 

@@ -13,6 +13,8 @@
 extern NSString * const WCFNetworkError;
 extern NSString * const NOTIFY_LoadedStudentsData;
 extern NSString * const NOTIFY_DataUpdated;
+extern NSString * const NOTIFY_LoadedGroupsData;
+extern NSString * const NOTIFY_GroupHasBeenSelected;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

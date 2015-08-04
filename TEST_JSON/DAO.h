@@ -10,10 +10,13 @@
 #import <CoreData/CoreData.h>
 
 #import "Student.h"
+#import "Group.h"
 
 @interface DAO : NSObject {
 	NSManagedObjectContext *moc;
 }
+
+@property (nonatomic, retain) Group *currentGroup;
 
 + (DAO *) sharedInstance;
 
@@ -22,9 +25,8 @@
 - (NSFetchedResultsController *) facebookedFriendsWithPredicate:(NSString *)aPredicate;
 - (NSFetchedResultsController *) addrBookFriendsWithPredicate:(NSString *)aPredicate;
 
-- (NSFetchedResultsController *) wishesWithPredicate:(NSString *) aPredicate;
-
-
-- (NSFetchedResultsController *) studentsWithPredicate:(NSString *) aPredicate;
+- (NSFetchedResultsController *) groupsWithPredicate:(NSString *) aPredicate;
+//- (NSFetchedResultsController *) studentsWithPredicate:(NSString *) aPredicate;
+- (NSFetchedResultsController *) studentsWithPredicate:(NSPredicate *) aPredicate;
 
 @end
